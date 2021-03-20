@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0438C51726062ED500F00D8F /* AuthSevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438C51626062ED500F00D8F /* AuthSevice.swift */; };
+		0438C51D2606318500F00D8F /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0438C51C2606318500F00D8F /* AuthViewController.storyboard */; };
 		043D4E1E26049F4100FA346A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D4E1D26049F4100FA346A /* AppDelegate.swift */; };
 		043D4E2026049F4100FA346A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D4E1F26049F4100FA346A /* SceneDelegate.swift */; };
-		043D4E2226049F4100FA346A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D4E2126049F4100FA346A /* ViewController.swift */; };
-		043D4E2526049F4100FA346A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D4E2326049F4100FA346A /* Main.storyboard */; };
+		043D4E2226049F4100FA346A /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D4E2126049F4100FA346A /* AuthViewController.swift */; };
 		043D4E2726049F4200FA346A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043D4E2626049F4200FA346A /* Assets.xcassets */; };
 		043D4E2A26049F4200FA346A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D4E2826049F4200FA346A /* LaunchScreen.storyboard */; };
+		70F0047C5CC568CD8215EC1C /* Pods_VkNewsFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946F1E2ED2AB892D8C320FBF /* Pods_VkNewsFeed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0438C51626062ED500F00D8F /* AuthSevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSevice.swift; sourceTree = "<group>"; };
+		0438C51C2606318500F00D8F /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
 		043D4E1A26049F4100FA346A /* VkNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043D4E1D26049F4100FA346A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043D4E1F26049F4100FA346A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		043D4E2126049F4100FA346A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		043D4E2426049F4100FA346A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		043D4E2126049F4100FA346A /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		043D4E2626049F4200FA346A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043D4E2926049F4200FA346A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043D4E2B26049F4200FA346A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73E9A2D24142E94A0DB60588 /* Pods-VkNewsFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VkNewsFeed.release.xcconfig"; path = "Target Support Files/Pods-VkNewsFeed/Pods-VkNewsFeed.release.xcconfig"; sourceTree = "<group>"; };
+		946F1E2ED2AB892D8C320FBF /* Pods_VkNewsFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VkNewsFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F04CAD913DCDF42E098631E6 /* Pods-VkNewsFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VkNewsFeed.debug.xcconfig"; path = "Target Support Files/Pods-VkNewsFeed/Pods-VkNewsFeed.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F0047C5CC568CD8215EC1C /* Pods_VkNewsFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0438C51526062EC400F00D8F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0438C51626062ED500F00D8F /* AuthSevice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		043D4E1126049F4100FA346A = {
 			isa = PBXGroup;
 			children = (
 				043D4E1C26049F4100FA346A /* VkNewsFeed */,
 				043D4E1B26049F4100FA346A /* Products */,
+				B8A68D29C8339FC912C80D62 /* Pods */,
+				AA3772A5129234C0845D4A5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,33 @@
 		043D4E1C26049F4100FA346A /* VkNewsFeed */ = {
 			isa = PBXGroup;
 			children = (
+				0438C51526062EC400F00D8F /* Services */,
 				043D4E1D26049F4100FA346A /* AppDelegate.swift */,
 				043D4E1F26049F4100FA346A /* SceneDelegate.swift */,
-				043D4E2126049F4100FA346A /* ViewController.swift */,
-				043D4E2326049F4100FA346A /* Main.storyboard */,
+				0438C51C2606318500F00D8F /* AuthViewController.storyboard */,
+				043D4E2126049F4100FA346A /* AuthViewController.swift */,
 				043D4E2626049F4200FA346A /* Assets.xcassets */,
 				043D4E2826049F4200FA346A /* LaunchScreen.storyboard */,
 				043D4E2B26049F4200FA346A /* Info.plist */,
 			);
 			path = VkNewsFeed;
+			sourceTree = "<group>";
+		};
+		AA3772A5129234C0845D4A5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				946F1E2ED2AB892D8C320FBF /* Pods_VkNewsFeed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8A68D29C8339FC912C80D62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F04CAD913DCDF42E098631E6 /* Pods-VkNewsFeed.debug.xcconfig */,
+				73E9A2D24142E94A0DB60588 /* Pods-VkNewsFeed.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 043D4E2E26049F4200FA346A /* Build configuration list for PBXNativeTarget "VkNewsFeed" */;
 			buildPhases = (
+				CD5CC4B14CB61FB6C99EF610 /* [CP] Check Pods Manifest.lock */,
 				043D4E1626049F4100FA346A /* Sources */,
 				043D4E1726049F4100FA346A /* Frameworks */,
 				043D4E1826049F4100FA346A /* Resources */,
+				DFD391BE3DEF47DE156ADEDE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,19 +162,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				043D4E2A26049F4200FA346A /* LaunchScreen.storyboard in Resources */,
+				0438C51D2606318500F00D8F /* AuthViewController.storyboard in Resources */,
 				043D4E2726049F4200FA346A /* Assets.xcassets in Resources */,
-				043D4E2526049F4100FA346A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD5CC4B14CB61FB6C99EF610 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VkNewsFeed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFD391BE3DEF47DE156ADEDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VkNewsFeed/Pods-VkNewsFeed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VkNewsFeed/Pods-VkNewsFeed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VkNewsFeed/Pods-VkNewsFeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		043D4E1626049F4100FA346A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043D4E2226049F4100FA346A /* ViewController.swift in Sources */,
+				0438C51726062ED500F00D8F /* AuthSevice.swift in Sources */,
+				043D4E2226049F4100FA346A /* AuthViewController.swift in Sources */,
 				043D4E1E26049F4100FA346A /* AppDelegate.swift in Sources */,
 				043D4E2026049F4100FA346A /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +226,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		043D4E2326049F4100FA346A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				043D4E2426049F4100FA346A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		043D4E2826049F4200FA346A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,10 +355,15 @@
 		};
 		043D4E2F26049F4200FA346A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F04CAD913DCDF42E098631E6 /* Pods-VkNewsFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VkNewsFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,10 +378,15 @@
 		};
 		043D4E3026049F4200FA346A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73E9A2D24142E94A0DB60588 /* Pods-VkNewsFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VkNewsFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

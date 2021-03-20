@@ -7,13 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AuthViewController: UIViewController {
 
+    var authService: AuthSevice!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        authService = AuthSevice()
+        authService.wakeUpSession()
     }
-
-
 }
 
