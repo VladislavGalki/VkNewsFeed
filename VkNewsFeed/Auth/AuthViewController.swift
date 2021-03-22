@@ -13,8 +13,10 @@ class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        authService = AuthSevice()
+        authService = SceneDelegate.shared().authService
+    }
+    
+    @IBAction func authButton(_ sender: UIButton) {
         authService.wakeUpSession()
     }
 }
