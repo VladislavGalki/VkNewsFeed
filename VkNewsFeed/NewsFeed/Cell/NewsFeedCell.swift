@@ -21,7 +21,7 @@ protocol NewsFeedCellViewModelProtocol {
 
 class NewsFeedCell: UITableViewCell {
     
-    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var profileImage: WebImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dataLabel: UILabel!
     @IBOutlet weak var postLabel: UILabel!
@@ -38,6 +38,7 @@ class NewsFeedCell: UITableViewCell {
     }
     
     func configure(viewModel: NewsFeedCellViewModelProtocol) {
+        profileImage.setImage(from: viewModel.profile)
         nameLabel.text = viewModel.name
         dataLabel.text = viewModel.date
         postLabel.text = viewModel.text

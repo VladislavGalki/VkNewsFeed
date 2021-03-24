@@ -7,12 +7,20 @@
 
 import Foundation
 
+protocol ProfileRepresentable {
+    var id: Int { get }
+    var nameHeader: String { get }
+    var photo: String { get }
+}
+
 struct FeedResponseWrapped: Decodable {
     let response: FeedResponse
 }
 
 struct FeedResponse: Decodable {
     let items: [FeedItem]
+    let groups: [Group]
+    let profiles: [Profile]
 }
 
 struct FeedItem: Decodable {
@@ -35,4 +43,46 @@ struct FeedItem: Decodable {
 
 struct CountableItem: Decodable {
     let count: Int
+}
+
+struct Group: Decodable, ProfileRepresentable {
+    
+    let id: Int
+    let name: String
+    let photo100: String
+    
+    var nameHeader: String {
+        return name
+    }
+    var photo: String {
+        return photo100
+    }
+    
+    enum CodinKeys: String, CodingKey {
+        case id
+        case name
+        case photo100 = "photo_100"
+    }
+}
+
+struct Profile: Decodable, ProfileRepresentable {
+    
+    let id: Int
+    let firstName: String
+    let lastName: String
+    let photo100: String
+    
+    var nameHeader: String {
+        return firstName + " " + lastName
+    }
+    var photo: String {
+        return photo100
+    }
+    
+    enum CodinKeys: String, CodingKey {
+        case id
+        case firstName = "first_name"
+        case lastName = "last_name"
+        case photo100 = "photo_100"
+    }
 }
