@@ -9,13 +9,12 @@ import UIKit
 
 class WebImageView: UIImageView {
     
-    func setImage(from url: String) {
+    func setImage(from imageUrl: String?) {
         
-        guard let url = URL(string: url) else { return }
+        guard let imageUrl = imageUrl, let url = URL(string: imageUrl) else { return }
         
         if let cacheResponse = URLCache.shared.cachedResponse(for: URLRequest(url: url)) {
             self.image = UIImage(data: cacheResponse.data)
-            print("кеш")
             return
         }
         

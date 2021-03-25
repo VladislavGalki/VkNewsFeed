@@ -30,6 +30,8 @@ enum NewsFeed {
 }
 
 struct FeedViewModel {
+    var cells = [Cell]()
+    
     struct Cell: NewsFeedCellViewModelProtocol {
         var profile: String
         var name: String
@@ -39,9 +41,14 @@ struct FeedViewModel {
         var comments: String?
         var shares: String?
         var views: String?
+        var photoAtachment: PhotoAtachmentViewModelProtocol?
     }
     
-    var cells = [Cell]()
+    struct FeedCellPhotoAtachment: PhotoAtachmentViewModelProtocol {
+        var imageStringUrl: String
+        var height: Int
+        var width: Int
+    }
     
     init(cell: [Cell]) {
         self.cells = cell

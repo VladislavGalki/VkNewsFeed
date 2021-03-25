@@ -43,6 +43,10 @@ class NewsFeedViewController: UIViewController, NewsFeedDisplayLogic {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: NewsFeedCell.cellId.self, bundle: nil), forCellReuseIdentifier: NewsFeedCell.cellId)
+        tableView.separatorStyle = .none
+        tableView.backgroundColor = .clear
+        view.backgroundColor = .blue
+        
         setup()
         interactor?.makeRequest(request: NewsFeed.Model.Request.RequestType.getNewsFeed)
     }
